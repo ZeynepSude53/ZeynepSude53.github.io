@@ -1,170 +1,68 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects and interests of Zeynep Sude, a Geomatics Engineering student.">
-    <title>Projects | Zeynep Sude</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/projects.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Zeynep Sude's geomatics internship work and Web GIS coursework." name="description"/>
+<title>Projects | Zeynep Sude</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/projects.css" rel="stylesheet"/>
+<link href="css/geo-explorer.css" rel="stylesheet"/>
+<script defer="" src="js/geo-effects.js"></script>
+<link href="css/language-ui.css" rel="stylesheet"/><script defer="True" src="js/language.js"></script></head>
 <body>
-
 <header>
-    <nav>
-        <h2>Zeynep Sude</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="maps.html">Maps</a></li>
-        </ul>
-    </nav>
+<nav aria-label="Main navigation">
+<h2>Zeynep Sude</h2>
+<ul>
+<li><a href="index.html"><span data-i18n="Home">Home</span></a></li>
+<li><a href="about.html"><span data-i18n="About">About</span></a></li>
+<li><a aria-current="page" class="active" href="projects.html"><span data-i18n="Projects">Projects</span></a></li>
+<li><a href="maps.html"><span data-i18n="Maps">Maps</span></a></li>
+</ul>
+<div aria-label="Website language" class="lang-switch" role="group"><button aria-pressed="true" data-lang="en" type="button">EN</button><button aria-pressed="false" data-lang="tr" type="button">TR</button></div></nav>
 </header>
-
 <main class="projects-page">
-
-    <section class="projects-intro">
-        <span class="project-label">MY PORTFOLIO</span>
-        <h1>Projects & <span>Explorations.</span></h1>
-        <p>
-            A collection of my interests, learning experiences,
-            and explorations in geospatial technologies.
-        </p>
-    </section>
-
-    <section class="projects-section">
-        <span class="project-label">GMT458 WEB GIS</span>
-        <h2>Interactive Mapping</h2>
-        <p class="section-description">
-            As part of my Web GIS coursework, I am exploring
-            different ways to create interactive maps using
-            JavaScript mapping libraries.
-        </p>
-
-        <div class="project-grid">
-
-            <article class="project-card">
-                <div class="project-number">01 / OPENLAYERS</div>
-                <h3>OpenLayers Map</h3>
-                <p>
-                    An interactive web map exploring geographic
-                    visualization, map controls, and marker
-                    visibility at different zoom levels.
-                </p>
-                <span class="project-tag">Web Mapping</span>
-                <span class="project-tag">JavaScript</span>
-                <a href="maps.html#openlayers-map">
-                    Explore Map →
-                </a>
-            </article>
-
-            <article class="project-card">
-                <div class="project-number">02 / LEAFLET</div>
-                <h3>Leaflet Map</h3>
-                <p>
-                    A lightweight interactive map exploring
-                    geographic locations, map navigation,
-                    and customized map behavior.
-                </p>
-                <span class="project-tag">Leaflet</span>
-                <span class="project-tag">GIS</span>
-                <a href="maps.html#leaflet-map">
-                    Explore Map →
-                </a>
-            </article>
-
-        </div>
-    </section>
-
-    <section class="table-section">
-        <span class="project-label">BEYOND THE MAPS</span>
-        <h2>My Interests in Pictures</h2>
-        <p class="section-description">
-            A small visual collection of the things that
-            inspire me, both inside and outside university.
-        </p>
-
-        <div class="table-wrapper">
-            <table class="interests-table">
-                <thead>
-                    <tr>
-                        <th>Photo</th>
-                        <th>Interest</th>
-                        <th>What It Means to Me</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>
-                            <img
-                                src="images/horse-riding.jpg"
-                                alt="Zeynep riding a horse outdoors"
-                                loading="lazy">
-                        </td>
-                        <td>Horseback Riding</td>
-                        <td>
-                            My biggest passion. Riding gives
-                            me a feeling of freedom and a
-                            special connection with horses.
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img
-                                src="images/horse-moment.jpg"
-                                alt="A quiet moment with a horse"
-                                loading="lazy">
-                        </td>
-                        <td>Outdoor Experiences</td>
-                        <td>
-                            I enjoy spending time outdoors,
-                            discovering new places, and
-                            creating memorable experiences.
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img
-                                src="images/cat-white.jpg"
-                                alt="Sütlaç, a white cat"
-                                loading="lazy">
-                        </td>
-                        <td>Life with Sütlaç</td>
-                        <td>
-                            One of my two cats, bringing
-                            a little extra joy to everyday life.
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <img
-                                src="images/cat-gray.jpg"
-                                alt="Ares, a gray cat"
-                                loading="lazy">
-                        </td>
-                        <td>Life with Ares</td>
-                        <td>
-                            My other cat, and another
-                            special part of my life.
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
+<section class="projects-intro">
+<span class="project-label"><span data-i18n="MY PORTFOLIO">MY PORTFOLIO</span></span>
+<h1><span data-i18n="Projects &amp;">Projects &amp;</span> <span><span data-i18n="Explorations.">Explorations.</span></span></h1>
+<p><span data-i18n="Selected work from my geomatics internship and ongoing Web GIS coursework.">Selected work from my geomatics internship and ongoing Web GIS coursework.</span></p>
+</section>
+<section aria-labelledby="netcad-heading" class="projects-section">
+<span class="project-label"><span data-i18n="INTERNSHIP WORK · NETCAD 8.5 GIS">INTERNSHIP WORK · NETCAD 8.5 GIS</span></span>
+<h2 id="netcad-heading"><span data-i18n="Terrain Modeling &amp; 3D Visualization">Terrain Modeling &amp; 3D Visualization</span></h2>
+<p class="section-description"><span data-i18n="During my internship, I worked with topographic data in Netcad. These screenshots document elevation points, contour lines, a triangulated terrain surface, and a 3D terrain preview. The experience introduced me to practical terrain-data visualization and GIS workflows.">During my internship, I worked with topographic data in Netcad. These screenshots document elevation points, contour lines, a triangulated terrain surface, and a 3D terrain preview. The experience introduced me to practical terrain-data visualization and GIS workflows.</span></p>
+<div class="feature-photo"><img alt="3D terrain surface preview in Netcad GIS" loading="lazy" src="images/netcad-3d.jpg"/><p><span data-i18n="3D visualization of the terrain surface in Netcad.">3D visualization of the terrain surface in Netcad.</span></p></div>
+<div class="project-tag-row"><span class="project-tag">Netcad GIS</span><span class="project-tag"><span data-i18n="Topographic Data">Topographic Data</span></span><span class="project-tag">TIN</span><span class="project-tag"><span data-i18n="3D Terrain">3D Terrain</span></span></div>
+</section>
+<section aria-labelledby="gallery-heading" class="table-section">
+<span class="project-label"><span data-i18n="PROCESS &amp; OUTPUTS">PROCESS &amp; OUTPUTS</span></span>
+<h2 id="gallery-heading"><span data-i18n="Internship Project Gallery">Internship Project Gallery</span></h2>
+<p class="section-description"><span data-i18n="A visual overview of the terrain modeling work. This is an HTML table with project images and descriptions.">A visual overview of the terrain modeling work. This is an HTML table with project images and descriptions.</span></p>
+<div class="table-wrapper">
+<table class="interests-table">
+<caption><span data-i18n="Netcad terrain-modeling screenshots and stages">Netcad terrain-modeling screenshots and stages</span></caption>
+<thead><tr><th scope="col"><span data-i18n="Screenshot">Screenshot</span></th><th scope="col"><span data-i18n="Stage">Stage</span></th><th scope="col"><span data-i18n="Description">Description</span></th></tr></thead>
+<tbody>
+<tr><td><img alt="Netcad overview with topographic points and layers" loading="lazy" src="images/netcad-overview.jpg"/></td><td><span data-i18n="Data Overview">Data Overview</span></td><td><span data-i18n="Inspecting elevation points, mapped features and GIS layers.">Inspecting elevation points, mapped features and GIS layers.</span></td></tr>
+<tr><td><img alt="Close-up of elevation points and contour lines in Netcad" loading="lazy" src="images/netcad-contours.jpg"/></td><td><span data-i18n="Terrain Detail">Terrain Detail</span></td><td><span data-i18n="Examining contour lines and elevation point distribution.">Examining contour lines and elevation point distribution.</span></td></tr>
+<tr><td><img alt="Triangulated terrain surface rendered with color-coded lines" loading="lazy" src="images/netcad-tin.jpg"/></td><td><span data-i18n="Triangulated Surface">Triangulated Surface</span></td><td><span data-i18n="Visualizing the terrain through a triangulated irregular network (TIN).">Visualizing the terrain through a triangulated irregular network (TIN).</span></td></tr>
+<tr><td><img alt="Three-dimensional digital terrain model" loading="lazy" src="images/netcad-3d.jpg"/></td><td><span data-i18n="3D Preview">3D Preview</span></td><td><span data-i18n="Reviewing the resulting terrain representation in three dimensions.">Reviewing the resulting terrain representation in three dimensions.</span></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section aria-labelledby="webgis-heading" class="projects-section">
+<span class="project-label"><span data-i18n="GMT458 WEB GIS">GMT458 WEB GIS</span></span>
+<h2 id="webgis-heading"><span data-i18n="Interactive Web Mapping">Interactive Web Mapping</span></h2>
+<p class="section-description"><span data-i18n="For my Web GIS course, I am building interactive maps with two JavaScript libraries. These interactive maps use OpenLayers and Leaflet to share my travel memories and favorite places in Ankara.">For my Web GIS course, I am building interactive maps with two JavaScript libraries. These interactive maps use OpenLayers and Leaflet to share my travel memories and favorite places in Ankara.</span></p>
+<div class="project-grid">
+<article class="project-card"><div class="project-number"><span data-i18n="01 / OPENLAYERS">01 / OPENLAYERS</span></div><h3><span data-i18n="OpenLayers Map">OpenLayers Map</span></h3><p><span data-i18n="A personal travel map with zoom-based marker visibility.">A personal travel map with zoom-based marker visibility.</span></p><a href="maps.html#openlayers-map"><span data-i18n="Maps page →">Maps page →</span></a></article>
+<article class="project-card"><div class="project-number">02 / LEAFLET</div><h3><span data-i18n="Leaflet Map">Leaflet Map</span></h3><p><span data-i18n="An Ankara map with interactive markers and controlled world wrapping.">An Ankara map with interactive markers and controlled world wrapping.</span></p><a href="maps.html#leaflet-map"><span data-i18n="Maps page →">Maps page →</span></a></article>
+</div>
+</section>
 </main>
-
-<footer>
-    <p>© 2026 Zeynep Sude. GMT458 Web GIS.</p>
-</footer>
-
+<footer><p><span data-i18n="© 2026 Zeynep Sude. GMT458 Web GIS.">© 2026 Zeynep Sude. GMT458 Web GIS.</span></p></footer>
 </body>
 </html>

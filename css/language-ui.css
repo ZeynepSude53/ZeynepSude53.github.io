@@ -1,0 +1,10 @@
+/* language switch and subtle presentation improvements */
+.lang-switch{display:inline-flex;align-items:center;gap:3px;border:1px solid rgba(188,209,185,.45);border-radius:999px;padding:4px;margin-left:18px;flex-shrink:0}
+.lang-switch button{appearance:none;border:0;border-radius:999px;background:transparent;color:#d0d9cc;font:inherit;font-size:12px;font-weight:700;letter-spacing:.07em;padding:7px 12px;cursor:pointer;transition:background .2s,color .2s}
+.lang-switch button.is-active{background:#d3ab81;color:#102b27}
+.lang-switch button:focus-visible{outline:2px solid #e9bd83;outline-offset:3px}
+.memory-card,.hobby-card{will-change:transform}
+.memory-image img,.hobby-photo img{transition:transform .45s ease}
+.memory-image img{object-position:center center}
+@media(max-width:720px){header nav{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px} header nav ul{display:flex;flex-wrap:wrap;gap:10px} .lang-switch{margin-left:0} .lang-switch button{padding:6px 10px}}
+@media(prefers-reduced-motion:reduce){.memory-card,.hobby-card,.memory-image img,.hobby-photo img{transition:none!important;transform:none!important}}

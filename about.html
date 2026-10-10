@@ -1,75 +1,91 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Meet Zeynep Sude, a Geomatics Engineering student interested in remote sensing and GIS.">
-  <title>About | Zeynep Sude</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/about.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Meet Zeynep Sude, a Geomatics Engineering student interested in remote sensing and GIS." name="description"/>
+<title>About | Zeynep Sude</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/about.css" rel="stylesheet"/>
+<link href="css/geo-explorer.css" rel="stylesheet"/>
+<link href="css/personal-extras.css" rel="stylesheet"/>
+<script defer="" src="js/geo-effects.js"></script>
+<link href="css/language-ui.css" rel="stylesheet"/><script defer="True" src="js/language.js"></script></head>
 <body>
 <header>
-  <nav aria-label="Main navigation">
-    <h2>Zeynep Sude</h2>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active" aria-current="page">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="maps.html">Maps</a></li>
-    </ul>
-  </nav>
+<nav aria-label="Main navigation">
+<h2>Zeynep Sude</h2>
+<ul>
+<li><a href="index.html"><span data-i18n="Home">Home</span></a></li>
+<li><a aria-current="page" class="active" href="about.html"><span data-i18n="About">About</span></a></li>
+<li><a href="projects.html"><span data-i18n="Projects">Projects</span></a></li>
+<li><a href="maps.html"><span data-i18n="Maps">Maps</span></a></li>
+</ul>
+<div aria-label="Website language" class="lang-switch" role="group"><button aria-pressed="true" data-lang="en" type="button">EN</button><button aria-pressed="false" data-lang="tr" type="button">TR</button></div></nav>
 </header>
 <main class="about-layout">
-  <section class="about-hero about-reveal" aria-labelledby="intro-title">
-    <div class="about-hero-copy">
-      <p class="about-eyebrow">A LITTLE ABOUT ME</p>
-      <h1 id="intro-title">Hello, I'm <span>Zeynep Sude.</span></h1>
-      <p class="about-lead">I'm a 23-year-old Geomatics Engineering student at Hacettepe University, originally from Rize, Türkiye.</p>
-      <p>I would describe myself as energetic, friendly, and curious. I enjoy discovering new places, meeting people, and making memories beyond everyday routines.</p>
-      <a class="about-link" href="#my-story">Get to know me <span aria-hidden="true">↘</span></a>
-    </div>
-    <figure class="about-portrait">
-      <img src="images/portrait.jpg" alt="Portrait of Zeynep Sude outdoors" fetchpriority="high">
-      <figcaption>Zeynep Sude · Geomatics Engineering</figcaption>
-    </figure>
-  </section>
-  <section id="my-story" class="about-section" aria-labelledby="passion-title">
-    <div class="about-section-heading">
-      <p class="about-eyebrow">BEYOND THE CLASSROOM</p>
-      <h2 id="passion-title">More than a hobby.</h2>
-    </div>
-    <div class="about-story-grid">
-      <div class="about-story-text">
-        <p>Horseback riding holds a special place in my life. What began as an interest has become a genuine passion.</p>
-        <p>I love the connection between horse and rider, the quiet moments outdoors, and the feeling of freedom that comes with every ride. Even on busy days, time with horses gives me something to look forward to.</p>
-        <p>I also enjoy traveling and exploring new places, whether it's a new destination or simply a change of scenery.</p>
-      </div>
-      <div class="about-horse-gallery">
-        <img src="images/horse-riding.jpg" alt="Zeynep horseback riding outdoors" loading="lazy">
-        <img src="images/horse-moment.jpg" alt="A quiet moment with a white horse" loading="lazy">
-      </div>
-    </div>
-  </section>
-  <section class="about-section about-study" aria-labelledby="study-title">
-    <div class="about-section-heading">
-      <p class="about-eyebrow">ACADEMIC JOURNEY</p>
-      <h2 id="study-title">Looking at Earth differently.</h2>
-    </div>
-    <div class="about-study-card">
-      <div><p class="about-card-overline">HACETTEPE UNIVERSITY</p><h3>Geomatics Engineering</h3><p>Fourth-year student</p></div>
-      <div><p>My studies have introduced me to the many ways we can understand the world through spatial data. I'm especially interested in remote sensing and satellite imagery, and I hope to build my future career in this field.</p><div class="about-tags"><span>GIS / Web GIS</span><span>Remote Sensing</span><span>Satellite Imagery</span></div></div>
-    </div>
-  </section>
-  <section class="about-section about-cats" aria-labelledby="cats-title">
-    <div class="about-section-heading"><p class="about-eyebrow">LITTLE THINGS I LOVE</p><h2 id="cats-title">Life outside university.</h2><p>Family, new experiences, and two cats who make ordinary days a little more interesting.</p></div>
-    <div class="about-cat-gallery">
-      <figure><img src="images/cat-white.jpg" alt="A fluffy white cat" loading="lazy"><figcaption>One of my two cats</figcaption></figure>
-      <figure><img src="images/cat-gray.jpg" alt="A gray cat sitting by the window" loading="lazy"><figcaption>And the other one</figcaption></figure>
-    </div>
-  </section>
-  <section class="about-cta-bottom"><h2>Curious about my projects?</h2><p>Explore what I'm learning and building with geospatial technologies.</p><a href="projects.html">Explore Projects →</a></section>
+<section aria-labelledby="intro-title" class="about-hero about-reveal">
+<div class="about-hero-copy">
+<p class="about-eyebrow"><span data-i18n="A LITTLE ABOUT ME">A LITTLE ABOUT ME</span></p>
+<h1 id="intro-title"><span data-i18n="Hello, I'm">Hello, I'm</span> <span><span data-i18n="Zeynep Sude.">Zeynep Sude.</span></span></h1>
+<p class="about-lead"><span data-i18n="I'm a 23-year-old Geomatics Engineering student at Hacettepe University, originally from Rize, Türkiye.">I'm a 23-year-old Geomatics Engineering student at Hacettepe University, originally from Rize, Türkiye.</span></p>
+<p><span data-i18n="I would describe myself as energetic, friendly, and curious. I enjoy discovering new places, meeting people, and making memories beyond everyday routines.">I would describe myself as energetic, friendly, and curious. I enjoy discovering new places, meeting people, and making memories beyond everyday routines.</span></p>
+<a class="about-link" href="#my-story"><span data-i18n="Get to know me">Get to know me</span> <span aria-hidden="true">↘</span></a>
+</div>
+<figure class="about-portrait">
+<img alt="Portrait of Zeynep Sude outdoors" fetchpriority="high" src="images/portrait.jpg"/>
+<figcaption><span data-i18n="Zeynep Sude · Geomatics Engineering">Zeynep Sude · Geomatics Engineering</span></figcaption>
+</figure>
+</section>
+<section aria-labelledby="study-title" class="about-section about-study">
+<div class="about-section-heading">
+<p class="about-eyebrow"><span data-i18n="ACADEMIC JOURNEY">ACADEMIC JOURNEY</span></p>
+<h2 id="study-title"><span data-i18n="Looking at Earth differently.">Looking at Earth differently.</span></h2>
+</div>
+<div class="about-study-card">
+<div><p class="about-card-overline"><span data-i18n="HACETTEPE UNIVERSITY">HACETTEPE UNIVERSITY</span></p><h3><span data-i18n="Geomatics Engineering">Geomatics Engineering</span></h3><p><span data-i18n="Fourth-year student">Fourth-year student</span></p></div>
+<div><p><span data-i18n="My studies have introduced me to the many ways we can understand the world through spatial data. I'm especially interested in remote sensing and satellite imagery, and I hope to build my future career in this field.">My studies have introduced me to the many ways we can understand the world through spatial data. I'm especially interested in remote sensing and satellite imagery, and I hope to build my future career in this field.</span></p><div class="about-tags"><span>GIS / Web GIS</span><span><span data-i18n="Remote Sensing">Remote Sensing</span></span><span><span data-i18n="Satellite Imagery">Satellite Imagery</span></span></div></div>
+</div>
+</section><section aria-labelledby="passion-title" class="about-section" id="my-story">
+<div class="about-section-heading">
+<p class="about-eyebrow"><span data-i18n="BEYOND THE CLASSROOM">BEYOND THE CLASSROOM</span></p>
+<h2 id="passion-title"><span data-i18n="More than a hobby.">More than a hobby.</span></h2>
+</div>
+<div class="about-story-grid">
+<div class="about-story-text">
+<p><span data-i18n="Horseback riding holds a special place in my life. What began as an interest has become a genuine passion.">Horseback riding holds a special place in my life. What began as an interest has become a genuine passion.</span></p>
+<p><span data-i18n="I love the connection between horse and rider, the quiet moments outdoors, and the feeling of freedom that comes with every ride. Even on busy days, time with horses gives me something to look forward to.">I love the connection between horse and rider, the quiet moments outdoors, and the feeling of freedom that comes with every ride. Even on busy days, time with horses gives me something to look forward to.</span></p>
+<p><span data-i18n="I also enjoy traveling and exploring new places, whether it's a new destination or simply a change of scenery.">I also enjoy traveling and exploring new places, whether it's a new destination or simply a change of scenery.</span></p>
+</div>
+<div class="about-horse-gallery">
+<img alt="Zeynep horseback riding outdoors" loading="lazy" src="images/horse-riding.jpg"/>
+<img alt="A quiet moment with a white horse" loading="lazy" src="images/horse-moment.jpg"/>
+</div>
+</div>
+</section>
+
+
+<section aria-labelledby="hobbies-title" class="memory-section hobby-section geo-reveal">
+<div class="memory-section-heading"><p class="memory-eyebrow"><span data-i18n="SMALL JOYS, BIG MEMORIES">SMALL JOYS, BIG MEMORIES</span></p><h2 id="hobbies-title"><span data-i18n="A little more">A little more</span> <em><span data-i18n="me.">me.</span></em></h2><p><span data-i18n="When I'm not studying maps or riding horses, I love making things with my hands and spending time on the tennis court.">When I'm not studying maps or riding horses, I love making things with my hands and spending time on the tennis court.</span></p></div>
+<div class="hobby-grid">
+<article class="hobby-card"><div class="hobby-photo"><img alt="Ceramic painting materials and a handmade piece in progress" loading="lazy" src="images/ceramics.jpg"/></div><div class="hobby-copy"><span><span data-i18n="01 / SLOW MOMENTS">01 / SLOW MOMENTS</span></span><h3><span data-i18n="Ceramics &amp; painting">Ceramics &amp; painting</span></h3><p><span data-i18n="There's something calming about shaping and painting something by hand. I love slowing down, trying new colors and enjoying the creative process.">There's something calming about shaping and painting something by hand. I love slowing down, trying new colors and enjoying the creative process.</span></p></div></article>
+<article class="hobby-card"><div class="hobby-photo hobby-photo-tennis"><img alt="Tennis rackets and ball on an outdoor court" loading="lazy" src="images/tennis-court.jpg"/></div><div class="hobby-copy"><span><span data-i18n="02 / ACTIVE DAYS">02 / ACTIVE DAYS</span></span><h3><span data-i18n="Playing tennis">Playing tennis</span></h3><p><span data-i18n="Tennis brings out my energetic side. Whether I'm practicing or playing for fun, I enjoy being active and sharing the moment.">Tennis brings out my energetic side. Whether I'm practicing or playing for fun, I enjoy being active and sharing the moment.</span></p></div></article>
+</div>
+<figure class="hobby-wide"><img alt="A day out carrying tennis equipment" loading="lazy" src="images/tennis-day.jpg"/><figcaption><span data-i18n="Life feels better with a little balance: creativity, movement and fresh air.">Life feels better with a little balance: creativity, movement and fresh air.</span></figcaption></figure>
+</section>
+<section aria-labelledby="hara-title" class="memory-section hara-highlight">
+<div class="hara-photo"><img alt="Horses looking out from the stables at Hara Ankara" loading="lazy" src="images/hara-ankara.jpg"/></div>
+<div class="hara-text"><p class="memory-eyebrow"><span data-i18n="A PLACE CLOSE TO MY HEART">A PLACE CLOSE TO MY HEART</span></p><h2 id="hara-title">Hara Ankara <em><span data-i18n="&amp; horseback riding.">&amp; horseback riding.</span></em></h2><p><span data-i18n="Horseback riding is more than a hobby to me; it's a genuine passion. Time with horses at my riding club is something I always look forward to.">Horseback riding is more than a hobby to me; it's a genuine passion. Time with horses at my riding club is something I always look forward to.</span></p><a href="maps.html#leaflet-map"><span data-i18n="Find it on my Ankara map ↗">Find it on my Ankara map ↗</span></a></div>
+</section><section aria-labelledby="cats-title" class="about-section about-cats">
+<div class="about-section-heading"><p class="about-eyebrow"><span data-i18n="LITTLE THINGS I LOVE">LITTLE THINGS I LOVE</span></p><h2 id="cats-title"><span data-i18n="Life outside university.">Life outside university.</span></h2><p><span data-i18n="Family, new experiences, and two cats who make ordinary days a little more interesting.">Family, new experiences, and two cats who make ordinary days a little more interesting.</span></p></div>
+<div class="about-cat-gallery">
+<figure><img alt="A fluffy white cat" loading="lazy" src="images/cat-white.jpg"/><figcaption>Sütlaç</figcaption></figure>
+<figure><img alt="A gray cat sitting by the window" loading="lazy" src="images/cat-gray.jpg"/><figcaption>Ares</figcaption></figure>
+</div>
+</section>
+<section class="about-cta-bottom"><h2><span data-i18n="Curious about my projects?">Curious about my projects?</span></h2><p><span data-i18n="Explore what I'm learning and building with geospatial technologies.">Explore what I'm learning and building with geospatial technologies.</span></p><a href="projects.html"><span data-i18n="Explore Projects →">Explore Projects →</span></a></section>
 </main>
-<footer><p>© 2026 Zeynep Sude. GMT458 Web GIS.</p></footer>
+<footer><p><span data-i18n="© 2026 Zeynep Sude. GMT458 Web GIS.">© 2026 Zeynep Sude. GMT458 Web GIS.</span></p></footer>
 </body>
 </html>
